@@ -1,0 +1,2 @@
+# WordSegmenter
+Word Segmenter API
