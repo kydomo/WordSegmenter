@@ -11,7 +11,7 @@ segmenter = factory.getSegmenter()
 
 bp = Blueprint('v1', __name__, url_prefix='/')
 
-@bp.route("/getwords/", methods=["POST"])
+@bp.route("/getwords/", methods=["GET", "POST"])
 def getWords():
     domains = request.get_json()
     if type(domains) != list:
