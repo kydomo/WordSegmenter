@@ -2,10 +2,10 @@ from wordsegment import load, segment
 
 class WordSegment:
     def __init__(self):
-        doamin_info = {}
         load()
 
     def getWords(self, domain_list):
+        domain_info = {}
         for domain in domain_list:
-            self.domain_info[domain] = segment(domain)
-        return self.domain_info
+            domain_info[domain] = segment(domain)
+        return domain_info
